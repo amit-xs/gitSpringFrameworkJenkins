@@ -3,9 +3,10 @@ package com.shanInfotech.springFrameworkDbConnect.repositories;
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
 import com.shanInfotech.springFrameworkDbConnect.entities.CourseEntity;
-
+@Repository
 public interface CourseRepository extends JpaRepository<CourseEntity, String> {
 
     // course -> trainer -> trainerId
